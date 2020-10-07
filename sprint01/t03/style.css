@@ -1,0 +1,52 @@
+.orange {
+    background: orange;
+    text-align: center;
+}
+
+.green {
+    background: green;
+    text-align: center;
+}
+
+.blue {
+    background: blue;
+    text-align: center;
+}
+
+.yellow {
+    background: yellow;
+    text-align: center;
+}
+
+.red {
+    background: red;
+    text-align: center;
+}
+
+.purple {
+    background: purple;
+    text-align: center;
+}
+
+.lnk {
+    text-align: center;
+}
+
+.hdr {
+    background: black;
+    color: white;
+    text-align: center; 
+    border: none;
+    border-spacing: 0px;
+    border-style: solid;
+  border-width: 0px;
+  border-color: #000000;
+  padding: 10px;
+}
+
+img {
+    border-radius: 30px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
