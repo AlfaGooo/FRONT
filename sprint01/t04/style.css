@@ -1,0 +1,17 @@
+.japan {
+    width: 410px;
+    height: 230px;
+    border: 2px solid rgb(204, 197, 197);
+}
+
+.japan::after {
+    top: 120px;
+    left: 140px;
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    height: 150px;
+    width: 150px;
+    background-color: #ad2332;
+    border-radius: 50%;
+}

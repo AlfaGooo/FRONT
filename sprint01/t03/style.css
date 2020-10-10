@@ -1,52 +1,48 @@
-.orange {
-    background: orange;
+.submit {
+    color: black;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    position: relative;
+    height: 2em;
+    width: 100%;
+}
+
+h2 {
+    font-size: 25pt;
+    margin-top: none;
+}
+
+input {
+    border-radius: 3px;
+    border-color: blue;
+}
+
+button {
+    color: green;
+    border-radius: 3px;
+    text-decoration: none;
+    color: green;
+    user-select: none; /*убирает выделение текста*/
+    background: LightGrey;
+    border-color: DimGrey;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
+    margin-left: -2px;
 }
 
-.green {
-    background: green;
-    text-align: center;
+button:hover {
+    background: LightGrey;
+    color: red;
 }
 
-.blue {
-    background: blue;
-    text-align: center;
+input.colortext:hover {
+    color: red;
 }
 
-.yellow {
-    background: yellow;
-    text-align: center;
-}
-
-.red {
-    background: red;
-    text-align: center;
-}
-
-.purple {
-    background: purple;
-    text-align: center;
-}
-
-.lnk {
-    text-align: center;
-}
-
-.hdr {
-    background: black;
-    color: white;
-    text-align: center; 
-    border: none;
-    border-spacing: 0px;
-    border-style: solid;
-  border-width: 0px;
-  border-color: #000000;
-  padding: 10px;
-}
-
-img {
-    border-radius: 30px;
-    width: 120px;
-    height: 120px;
-    padding: 10px;
+.colortext {
+    color: green;
 }
