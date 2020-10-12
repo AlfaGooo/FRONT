@@ -1,0 +1,49 @@
+.match {
+  transform: scale(0.9, 1);
+}
+
+.top {
+  background: linear-gradient(
+    180deg,
+    white 5%,
+    rgba(182, 138, 99, 1) 33%,
+    rgba(108, 59, 28, 1) 60%,
+    rgba(71, 39, 19, 1) 100%
+  );
+  border-radius: 50px/66px;
+  box-shadow: 0 -15px 15px 2px white;
+  height: 66px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  width: 50px;
+  z-index: 1;
+}
+
+.fire {
+  background: linear-gradient(
+    -45deg,
+    rgba(245, 205, 125, 1) 0%,
+    rgb(245, 53, 32) 100%
+  );
+  border-radius: 0px 50% 50% 50%;
+  box-shadow: 0 0 15px 2px #f1784c;
+  height: 150px;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  top: 180px;
+  position: relative;
+  width: 150px;
+  z-index: 1;
+}
+
+.stick {
+  background: chocolate;
+  width: 30px;
+  height: -10px;
+  padding-top: 300px;
+  margin-top: 100px;
+  margin-left: 410px;
+  border: 1px solid rgb(88, 42, 10);
+  background: linear-gradient(90deg, chocolate 40%, rgb(207, 207, 207) 100%);
+}

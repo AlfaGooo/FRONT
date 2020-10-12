@@ -1,0 +1,31 @@
+.main {
+  display: inline-block;
+}
+
+.baby {
+  width: 130px;
+  height: 25 px;
+  background: #20a4d8;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.baby_2 {
+  width: 130px;
+  height: 25 px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-style: bold;
+  font-size: 2em;
+  padding-left: -20px;
+}
+
+.main:hover {
+  box-shadow: 0 0 15px rgba(54, 53, 53, 0.5);
+}
+
+img {
+  padding-top: 10px;
+}

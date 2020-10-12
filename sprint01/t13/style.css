@@ -1,0 +1,46 @@
+h1 {
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+h1::after {
+  content: "\00A9  Bad Grandpa \00A9";
+}
+
+img {
+  float: left;
+  padding: 20px;
+}
+
+.text {
+  padding: 10px;
+  font-size: 1.55em;
+}
+
+.all {
+  background-color: white;
+  height: 90vh;
+}
+
+@media print {
+  .text {
+    float: none;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
+
+img {
+  width: 50%;
+}
+
+h1 {
+  padding-left: 30px;
+}
+
+.text {
+  padding-left: 30px;
+  padding-right: 30px;
+}

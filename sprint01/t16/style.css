@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    /* padding: 50px;  */
+    grid-gap: 10px 0;
+}
+
+#hdr {
+    background: red;
+    text-align: center;
+    color: white;
+    background: linear-gradient(180deg, red 50%, white 140%);
+}
+
+.TEAM {
+    height: 50px;
+    width: 100px;
+}
+
+.EMEMIES {
+   height: 50px;
+   width: 100px;
+}
+
+.menu {
+    background: rgb(211, 210, 210);
+}
