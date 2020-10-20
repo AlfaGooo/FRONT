@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: 2.2em;
+}
+
+input::placeholder {
+  color: grey;
+  font-size: 1.2em;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+input {
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.colortext {
+  color: green; /* Цвет текста */
+}
+
+input.colortext:hover {
+  color: red;
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+button {
+  text-decoration: none;
+  color: green;
+  user-select: none; /*убирает выделение текста*/
+  background: LightGrey;
+  border-radius: 5px;
+  border-color: DimGrey;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+button:hover {
+  background: LightGrey;
+  color: red;
+}
