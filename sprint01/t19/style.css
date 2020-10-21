@@ -33,11 +33,15 @@ button {
     border: 0px solid rgb(238, 113, 133);
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
 }
 
 input {
     border: none;
-    border-top-color: blue;
 }
 
 #el1,
@@ -78,9 +82,34 @@ label {
   visibility: hidden;
 }
 
+.job {
+    width: 100%;
+    font-size: 18px;
+    font-weight: lighter;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(187, 184, 184);
+    display: flex;
+    justify-content: center;
+}
+
+
+.name,
+.email {
+    width: 350px;
+    font-size: 18px;
+    font-weight: lighter;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(187, 184, 184);
+}
+
+
 input:checked + label {
     background-color: rgb(17, 24, 65);
     color: white;
+    
 }
 
 input:checked + label::after {

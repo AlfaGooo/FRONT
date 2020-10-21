@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.ball {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 1px solid green;
+  border-radius: 50%;
+  background-color: green;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.ball:hover {
+  background-color: red;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(calc(100vw - 200px), 0%);
+  }
+}

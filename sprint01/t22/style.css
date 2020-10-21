@@ -1,0 +1,287 @@
+* {
+  font-family: "Noto Sans HK", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+h1 {
+  color: #666666;
+  text-align: left;
+  font-size: 30px;
+  padding-left: 350px;
+}
+
+
+.main-container {
+  width: 700px;
+  height: 420px;
+  background-color: #607d8b;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-collapse: collapse;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 25px;
+}
+
+.main-form {
+  background-color: #526e7c;
+  width: 95%;
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 0px 0px -40px;
+}
+
+.col-1,
+.col-2 {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 10px 10px 20px 10px;
+}
+
+.typeface > select {
+  border-radius: 5px;
+  background-color: #202020;
+  color: white;
+  border: 1px solid rgb(155, 155, 155);
+  width: 200px;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+	-webkit-appearance: none;
+}
+
+.typeface > select:focus + option {
+  background-color: #202020;
+}
+
+.typeface > select > option:hover {
+  background-color: #202020 !important;
+}
+
+.ui-dark {
+  position: relative;
+}
+
+.ui-dark > label {
+  position: absolute;
+  right: 10px;
+}
+
+.ui-dark p {
+  margin-top: 55px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: -40px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3b3737;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(43, 201, 188);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #7e7e7e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #202020;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.weight > input {
+  display: none;
+}
+
+.weight > input + label {
+  margin-left: 1.5em;
+  color:white;
+  position: relative;
+}
+
+.weight > label::before {
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  background: #202020;
+  border: 1px solid #a6a7a9;
+  content: "";
+  margin-left: -1.4em;
+}
+
+.weight > input:checked + label::before {
+  content: "✓";
+  color: rgb(43, 201, 188);
+  text-align: center;
+}
+
+
+.color {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.color p {
+  position: relative;
+  bottom: 60px;
+}
+.color > input {
+  display: none;
+}
+
+.color > label {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid #8a8d8f;
+  border-radius: 50px;
+  padding-top;: 50px;
+}
+
+.color > input:checked + label::after {
+  position: relative;
+  content: "✓";
+  color: white;
+  top: 1px;
+  left: 5px;
+}
+
+.yellow {
+  background-color: yellow;
+  margin-right: 60px;
+  
+}
+
+.black {
+  background-color: green;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.red {
+  background-color: red;
+}
+
+.violet {
+  background-color: violet;
+  margin-left: -60px;
+}
+
+
+.range {
+  position: relative;
+  bottom: 30px;
+}
+
+.range-slide {
+  position: relative;
+  -webkit-appearance: none;
+  width: 87%;
+  height: 2px;
+  background: #909090;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.letter-a {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.letter-a > label {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.letter-a > .big {
+  transform: scale(1.8);
+}
+
+.range-slide:hover {
+  opacity: 1;
+}
+
+.range-slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(43, 201, 188);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-slide::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+}
+
+.icon-form {
+  background-color: #707070;
+  width: 60px;
+  height: 300px;
+  border: 1px solid #707070;
+  border-radius: 0% 20px 20px 0%;
+  margin: -40px;
+  margin-left: 0px;
+}
+
+img {
+  padding: 18px 6px 0px 5px;
+}

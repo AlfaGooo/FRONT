@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Setting form</title>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <div class="main-container">
+      <div class="main-form">
+        <div class="col-1">
+          <div class="typeface">
+            <p>Typeface</p>
+            <select>
+              <option value="acunim" class="acu">Acunim Pro</option>
+              <option value="comic">Comic Sans</option>
+              <option value="times">Times New Roman</option>
+            </select>
+          </div>
+          <div class="weight">
+            <p>Weight</p>
+              <input type="radio" id="regular" name="weight" value="regular">
+              <label for="regular">Regular</label>
+              <input type="radio" id="bolt" name="weight" value="bolt">
+              <label for="bolt">Bolt</label>
+          </div>
+          <div class="range">
+            <p>Size</p>
+            <input
+              type="range"
+              id="fsize"
+              min="1"
+              max="100"
+              value="10"
+              class="range-slide"
+            />
+            <div class="letter-a">
+              <p>A</p>
+              <p class="big">A</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="ui-dark">
+            <p>Dark UI</p>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="color">
+            <p>Color</p>
+            <input type="checkbox" name="color" id="violet" class="violet" />
+            <label for="violet" class="violet"></label>
+            <input type="checkbox" name="color" id="red" class="red" />
+            <label for="red" class="red"></label>
+            <input type="checkbox" name="color" id="grey" class="grey" />
+            <label for="grey" class="grey"></label>
+            <input type="checkbox" name="color" id="black" class="black" />
+            <label for="black" class="black"></label>
+            <input type="checkbox" name="color" id="yellow" class="yellow" />
+            <label for="yellow" class="yellow"></label>
+          </div>
+        </div>
+      </div>
+      <div class="icon-form">
+        <img src="assets/images/iconmonstr-google-plus-4-48.png" />
+        <img src="assets/images/iconmonstr-twitter-4-48.png" />
+        <img src="assets/images/iconmonstr-instagram-4-48.png" />
+        <img src="assets/images/iconmonstr-share-9-48.png" />
+      </div>
+    </div>
+  </body>
+</html>
