@@ -1,0 +1,48 @@
+header {
+    background-color: rgb(85, 85, 85);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+img {
+    width: 7em;
+    padding: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: rgb(85, 85, 85);;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+/*
+.nb_1el {
+    display: flex;
+    padding-right: 50px;
+}
+
+второй способ для навбара
+header 
+    display: flex;
+    flex-direction: row;
+*/
+
+
