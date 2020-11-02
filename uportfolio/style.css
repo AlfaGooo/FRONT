@@ -1,34 +1,161 @@
-header {
-    background-color: rgb(85, 85, 85);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 0px;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+/*.main_menu {
+    position: fixed;
+}*/
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav:before {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    content: '';
+    opacity: 0.7;
+    background: linear-gradient(90deg, black, black);
+}
+
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+nav .ul_navbar_el img {
+    background-color: white;
+       /* visibility: hidden;*/
+    position: left;
+    width: 3em;
+}
+
+nav ul li a:hover {
+    background: red;
+    text-decoration: underline;
+
+}
+
+nav ul li a:active {
+    transition-delay: 0.2s;
+    text-decoration: none;
+    font-size: 14px; 
+}
+
 
 h1 {
     font-size: 20px;
 }
 
-img {
-    width: 7em;
-    padding: 10px;
+/*.skill_sect img {
+    width: 6em;
 }
-
+*/
 body {
-    background-color: white;
+    background: url(assets/images/back.png)  0 0 repeat;
 }
 
-footer {
-    background-color: rgb(85, 85, 85);;
+.about {
+    height: 600px;
 }
 
-a {
-    color: white;
+.project {
+    border-color: 10px solid gray;
+    height: 600px;
 }
 
+.triggers {
+    padding: 56px 88px;
+}
+
+.triggers img{
+    float: left;
+}
+
+.triggers ul li {
+    width: 370px;
+    height: 230px;
+    border-color: 1px solid red;
+    position: center;
+    background-color: wheat;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+
+.triggers ul li .skill_title {
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.triggers img {
+    width: 6em;
+}
+
+
+.triggers ul li .skill_title span {
+    color: green;
+    font-size: 24px;
+    padding-left: 70px;
+}
+
+/*.skills_image {
+    padding-top: 200px;
+}*/
+
+footer .container {
+    position: relative;
+    background: url(assets/images/img_foot.png)  0 0 repeat;
+}
+
+footer .cont_back {
+    position: absolute;
+    background: url(assets/images/img_foot.png)  0 0 repeat;
+    opacity: 0.7;
+}
+
+footer .content {
+    position: relative;
+    margin-top: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+
+
+
+
+/*
 a:hover {
     color: red;
 }
